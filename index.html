@@ -2,79 +2,79 @@
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NovaShield - 【entity-NASA¦canonical_name=NASA】 Space Apps 2026</title>
 <style>
-body{margin:0;font-family:Arial;background:#070D1A;color:#fff}
-.top{background:#0E1A2E;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1E3350}
-.logo{font-size:22px;font-weight:800} .logo span{color:#22D3EE}
-.pill{padding:6px 14px;border-radius:20px;font-weight:700}
-.yellow{background:#FBBF24;color:#000} .green{background:#34D399;color:#000}
-.wrap{padding:16px;max-width:1200px;margin:auto}
-.hero{background:linear-gradient(90deg,#0E1A2E,#123A4A);border:1px solid #1E3350;border-radius:16px;padding:16px;margin-bottom:14px}
-.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}}
-.card{background:#0E1A2E;border:1px solid #1E3350;border-radius:16px;padding:14px}
-.card h3{margin:0 0 8px} .small{color:#94A3B8;font-size:13px}
-.zone{border:1px solid #1E3350;border-radius:12px;padding:10px;margin:6px 0;cursor:pointer}
-.zone.sel{border-color:#22D3EE;box-shadow:0 0 0 2px #22D3EE}
-.badge{display:inline-block;padding:4px 10px;border-radius:12px;font-weight:700;font-size:12px}
+*{box-sizing:border-box} body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#060B16;color:#EDF2F7}
+.top{background:#0B1526;border-bottom:1px solid #1E3350;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{font-size:24px;font-weight:800;letter-spacing:.3px} .logo i{color:#22D3EE;font-style:normal}
+.sub{color:#94A3B8;font-size:13px}
+.pill{padding:7px 14px;border-radius:999px;font-weight:800;font-size:13px}
+.yellow{background:#FBBF24;color:#111} .green{background:#34D399;color:#111}
+.wrap{max-width:1240px;margin:auto;padding:18px 18px 90px}
+.hero{background:linear-gradient(120deg,#0E1A2E,#0F3A4A);border:1px solid #1E3350;border-radius:18px;padding:20px}
+.hero h2{margin:0;font-size:20px} .hero p{color:#A8BCD0;margin:6px 0 14px}
+.btn{border:0;border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer;font-size:14px}
+.btnT{background:#2DD4BF;color:#06281F} .btnW{background:#fff;color:#111}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:#0E1A2E;border:1px solid #1E3350;border-radius:18px;padding:18px}
+.card h3{margin:0 0 6px;font-size:18px} .mut{color:#94A3B8;font-size:13.5px;line-height:1.5}
+.zone{border:1px solid #22385A;border-radius:14px;padding:12px;margin:8px 0;cursor:pointer;background:#0A1425}
+.zone.sel{border-color:#22D3EE;box-shadow:0 0 0 2px #22D3EE33}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:800}
 .bgY{background:#FEF3C7;color:#92400E} .bgG{background:#D1FAE5;color:#065F46}
-button{border:0;border-radius:20px;padding:10px 16px;font-weight:700;cursor:pointer}
-.btn{background:#2DD4BF;color:#000} .btn2{background:#fff;color:#000}
-.bar{display:flex;align-items:flex-end;gap:6px;height:80px;margin-top:8px}
-.bar div{background:#22D3EE;width:22px;text-align:center;font-size:10px;color:#000}
-.nav{position:fixed;bottom:0;left:0;right:0;background:#0E1A2E;border-top:1px solid #1E3350;display:flex;justify-content:center;gap:8px;padding:10px}
-.nav button{background:#1E3350;color:#fff}
-.crew{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
-@media(max-width:800px){.crew{grid-template-columns:1fr}}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.big{font-size:28px;font-weight:800;margin:8px 0}
+.bar{display:flex;align-items:flex-end;gap:8px;height:90px;margin-top:12px}
+.bar div{background:linear-gradient(#22D3EE,#0EA5A0);width:100%;border-radius:8px 8px 0 0;text-align:center;font-size:11px;color:#022;padding-top:6px}
+.crew{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px}
+@media(max-width:900px){.crew{grid-template-columns:1fr}}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#0B1526;border-top:1px solid #1E3350;display:flex;justify-content:center;gap:8px;padding:11px;flex-wrap:wrap}
+.nav button{background:#1A2C4A;color:#fff;border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}
+.note{background:#132A2E;border:1px solid #1E5A5A;border-radius:12px;padding:10px;margin-top:10px;font-size:13px;color:#BFE8E2}
+.ok{background:#123324;border:1px solid #1E6A4A;border-radius:12px;padding:10px;margin-top:10px;font-size:13.5px}
 </style></head>
 <body>
-<div class="top"><div class="logo">NovaShield <span>• See the Hidden. Predict the Risk. Protect the Crew.</span></div><div>AURORA-1 | Day 142/180 | <span id="overall" class="pill yellow">Overall: YELLOW</span></div></div>
+<div class="top"><div><div class="logo">NovaShield <i>— See the Hidden. Predict the Risk. Protect the Crew.</i></div><div class="sub">NASA Space Apps Challenge 2026 • AURORA-1 • Day 142 / 180</div></div><div><span class="sub">08:42 UTC • Offline-Ready • </span><span id="overall" class="pill yellow">Overall: YELLOW • Watch</span></div></div>
 <div class="wrap">
-<div class="hero"><b>Crew Health at a Glance — 1 Attention • 5 Normal</b><div class="small">AURORA-1 • 08:42 UTC • Offline-Ready • Last Sync 08:42:12 UTC • Simulated Data • 【entity-NASA¦canonical_name=NASA】 ECLSS / 【entity-NASA-STD-3001¦canonical_name=NASA】</div>
-<div style="margin-top:10px"><button class="btn" onclick="show('dash')">Dashboard</button> <button class="btn2" onclick="show('crew')">See All 6 Astronauts</button> <button class="btn2" onclick="show('models')">AI Models</button></div></div>
+<div class="hero"><h2>Crew Health at a Glance — 1 Attention • 5 Normal</h2><p>AURORA-1 • Last Sync 08:42:12 UTC • Simulated Data • Based on 【entity-NASA ECLSS¦canonical_name=NASA】 / 【entity-NASA-STD-3001¦canonical_name=NASA】 Concepts</p>
+<button class="btn btnT" onclick="show('dash')">Dashboard</button> <button class="btn btnW" onclick="show('crew')">See All 6 Astronauts</button> <button class="btn btnW" onclick="show('models')">AI Models</button></div>
 
 <div id="dash">
 <div class="grid">
-<div class="card"><h3>🛰️ AEROMAP — Environment</h3><div class="small">Why this matters: Finds hidden CO2 pockets in microgravity.</div>
-<div id="zones"></div>
-<div class="small">Sensor: CO2-SN-01 • Calibrated 2026-11-02 • Confidence 82%</div></div>
-<div class="card"><h3>🧠 ASTRA-SYNC — Health Impact</h3><div id="health"></div><div class="small">Estimates only, not diagnosis. Association only, not causation.</div>
-<button class="btn" id="doneBtn" onclick="markDone()">Mark as Done</button><div id="doneMsg" class="small"></div></div>
-<div class="card"><h3>💓 ZENVITA — Body Data (CREW-001)</h3><div id="body"></div><div class="small">SpO2 does NOT measure CO2. Trends shown separately. Opt-in. No audio/video.</div>
-<button class="btn2" onclick="alert('What-If: If airflow drops, CO2 may approach warning in 90 min.')">What-If Simulator</button></div>
+<div class="card"><h3>AEROMAP — Environment</h3><div class="mut">Why this matters: Finds hidden CO2 pockets in microgravity where one cabin average hides them.</div><div id="zones"></div><div class="mut">Sensor: CO2-SN-01 • Calibrated 2026-11-02 • Confidence 82% • Ventilation Fan FAN-SLP-01</div></div>
+<div class="card"><h3>ASTRA-SYNC — Health Impact</h3><div id="health"></div><div class="mut">Estimates only, not diagnosis. Association only, not causation.</div><button class="btn btnT" onclick="markDone()">Mark as Done</button><div id="doneMsg"></div><div class="note">AI Confidence + Limits: 82% • Based on 6h trend • Needs physical inspection to confirm.</div></div>
+<div class="card"><h3>ZENVITA — Body Data • CREW-001</h3><div id="body"></div><div class="mut">SpO2 does NOT measure CO2. Trends shown separately. Opt-in. No audio / video.</div><button class="btn btnW" onclick="alert('What-If: If airflow drops, CO2 may approach warning in 90 minutes.')">What-If Simulator</button></div>
 </div>
-<div class="card" style="margin-top:14px"><h3>📊 CO2 Trend — Sleeping Compartment (03:00-08:00)</h3><div class="bar" id="co2bars"></div><div class="small">Bars: 620, 640, 680, 730, 790, 850 ppm • Baseline &lt;800 ppm</div></div>
+<div class="card" style="margin-top:16px"><h3>CO2 Trend — Sleeping Compartment • 03:00 – 08:00</h3><div class="bar" id="co2bars"></div><div class="mut">Values: 620, 640, 680, 730, 790, 850 ppm • Warning threshold: Spacecraft requirement (not Earth value)</div></div>
 </div>
 
-<div id="crew" style="display:none"><h2>Crew Health — All 6 Astronauts (Equal Importance)</h2><div class="crew" id="crewGrid"></div><button class="btn2" onclick="show('dash')">Back to Dashboard</button></div>
+<div id="crew" style="display:none"><h2>Crew Health — All 6 Astronauts • Equal Importance</h2><p class="mut">Every astronaut gets equal detail. CREW-001 is the only YELLOW one — affected by Sleeping CO2 trend.</p><div class="crew" id="crewGrid"></div><br><button class="btn btnW" onclick="show('dash')">Back to Dashboard</button></div>
 
-<div id="models" style="display:none"><h2>AI Models — Visible in All Modes</h2>
-<div class="card"><b>Model 1 Pattern:</b> CO2 up + Airflow down in Sleeping • 82% • 6h trend • n=36 readings<br><b>Model 2 Prediction:</b> May approach warning in 90 min • Range 75-110 min<br><b>Model 3 Cause:</b> Reduced ventilation 82% • Obstruction 11% • Fan 7% • Needs inspection to confirm<br><b>Model 4 Health:</b> Sleep Down 28% • Fatigue High • Association only, not causation</div>
-<button class="btn2" onclick="show('dash')">Back to Dashboard</button></div>
+<div id="models" style="display:none"><h2>AI Models — Visible in All Modes</h2><div class="card"><b>Model 1 — Pattern Detection:</b> CO2 rising + Airflow falling in Sleeping • 82% • 6h trend • n=36 readings<br><br><b>Model 2 — Prediction:</b> May approach warning in 90 min • Range 75–110 min • Uncertainty ±15 min<br><br><b>Model 3 — Cause Analysis:</b> Reduced ventilation 82% • Outlet obstruction 11% • Fan change 7% • Needs inspection to confirm<br><br><b>Model 4 — Health Impact:</b> Sleep Down 28% • Fatigue High • Association only, not causation • Baseline n=7 days</div><br><button class="btn btnW" onclick="show('dash')">Back to Dashboard</button></div>
 
-<div class="card" style="margin-top:14px"><h3>Methodology & Honesty</h3><div class="small">Based on 【entity-NASA¦canonical_name=NASA】 ECLSS / 【entity-NASA-STD-3001¦canonical_name=NASA】. Thresholds from spacecraft requirements, not Earth values. Research Prototype. Decision-support only. Not a medical device. Simulated data. Privacy: Opt-in. Offline-first. Audit: 08:00 Alert → 08:05 Acknowledged → 08:20 Inspection → 08:40 Verified.</div></div>
-<div class="small" style="text-align:center;margin:20px 0 60px">NovaShield — Research Prototype, simulated data based on 【entity-NASA¦canonical_name=NASA】 ECLSS / 【entity-NASA-STD-3001¦canonical_name=NASA】. Decision-support only. Not a medical device.</div>
+<div class="card" style="margin-top:16px"><h3>Methodology • Privacy • Honesty</h3><p class="mut">Based on 【entity-NASA ECLSS¦canonical_name=NASA】 and 【entity-NASA-STD-3001¦canonical_name=NASA】. Thresholds from spacecraft requirements, not Earth values. Research Prototype. Decision-support only. Not a medical device. Simulated data. Privacy: Opt-in wearables, authorised sharing only. Offline-first: Works without Earth link. Audit Trail: 08:00 Alert → 08:05 Acknowledged → 08:20 Inspection → 08:40 Verified.</p></div>
+<p class="mut" style="text-align:center;margin-top:18px">NovaShield — Research Prototype, simulated data based on 【entity-NASA ECLSS¦canonical_name=NASA】 / 【entity-NASA-STD-3001¦canonical_name=NASA】. Decision-support only. Not a medical device.</p>
 </div>
-<div class="nav"><button onclick="show('dash')">Dashboard</button><button onclick="show('crew')">Crew Health</button><button onclick="show('models')">AI Models</button><button onclick="alert('Health: Sleep bars 7.5,7.2,6.8,6.5,6.1,6.0,5.8h — Last = Today 5.8h')">Health</button><button onclick="alert('Alerts: 08:00 CO2 rising Sleeping YELLOW | 06:00 Airflow down 30% | Yesterday Sleep 6.0h')">Alerts</button></div>
+<div class="nav"><button onclick="show('dash')">Dashboard</button><button onclick="show('crew')">Crew Health</button><button onclick="show('models')">AI Models</button><button onclick="alert('Health: Sleep bars 7.5, 7.2, 6.8, 6.5, 6.1, 6.0, 5.8h — Last bar = Today 5.8h')">Health</button><button onclick="alert('Alerts: 08:00 CO2 rising Sleeping YELLOW | 06:00 Airflow down 30% | Yesterday Sleep 6.0h Below normal')">Alerts</button></div>
 <script>
 let fixed=false;
 let zones=[{n:"Sleeping Compartment",c:850,s:"YELLOW"},{n:"Laboratory",c:620,s:"GREEN"},{n:"Exercise Area",c:640,s:"GREEN"},{n:"Workstation",c:610,s:"GREEN"},{n:"Galley",c:600,s:"GREEN"},{n:"Storage",c:605,s:"GREEN"}];
 let crew=[
-{name:"CREW-001 Commander",s:"YELLOW",hr:72,spo:97,sleep:"5.8h",rec:68},
-{name:"CREW-002 Pilot",s:"GREEN",hr:68,spo:98,sleep:"7.2h",rec:86},
-{name:"CREW-003 Engineer",s:"GREEN",hr:75,spo:98,sleep:"7.0h",rec:84},
-{name:"CREW-004 Scientist",s:"GREEN",hr:70,spo:99,sleep:"7.4h",rec:88},
-{name:"CREW-005 Medical Officer",s:"GREEN",hr:66,spo:98,sleep:"7.1h",rec:85},
-{name:"CREW-006 Specialist",s:"GREEN",hr:71,spo:98,sleep:"6.9h",rec:83}];
+{name:"CREW-001 Commander",s:"YELLOW",hr:72,spo:97,sleep:"5.8h",rec:68,note:"Affected by Sleeping CO2"},
+{name:"CREW-002 Pilot",s:"GREEN",hr:68,spo:98,sleep:"7.2h",rec:86,note:"Normal"},
+{name:"CREW-003 Engineer",s:"GREEN",hr:75,spo:98,sleep:"7.0h",rec:84,note:"Normal"},
+{name:"CREW-004 Scientist",s:"GREEN",hr:70,spo:99,sleep:"7.4h",rec:88,note:"Normal"},
+{name:"CREW-005 Medical Officer",s:"GREEN",hr:66,spo:98,sleep:"7.1h",rec:85,note:"Normal"},
+{name:"CREW-006 Specialist",s:"GREEN",hr:71,spo:98,sleep:"6.9h",rec:83,note:"Normal"}];
 function render(){
 let z=document.getElementById('zones'); z.innerHTML="";
-zones.forEach((x,i)=>{let b=x.s==="YELLOW"?"bgY":"bgG"; z.innerHTML+=`<div class="zone ${i===0?'sel':''}"><b>${x.n}</b> <span class="badge ${b}">${x.s}</span><div class="small">CO2 ${x.c} ppm • Temp 24.5°C • Humidity 55% • Airflow ${i===0?"0.12 Down 30%":"Normal"}</div></div>`});
-document.getElementById('health').innerHTML=`Sleep Down 28% • Fatigue High • Concentration Med-High • Stress Rising<br>CO2: ${zones[0].c} ppm ${fixed?"GREEN":"YELLOW Rising"} • Temp 24.5°C GREEN • Humidity 55% GREEN`;
-document.getElementById('body').innerHTML=`HRV Down 18% • SpO2 97% • Sleep 5.8h (Normal 7.5h) • Recovery ${fixed?82:68}/100 ${fixed?"GREEN":"LOW"} • HR 72 bpm`;
-document.getElementById('co2bars').innerHTML=[620,640,680,730,790,850].map(v=>`<div style="height:${v/12}px">${v}</div>`).join('');
+zones.forEach((x,i)=>{let b=x.s==="YELLOW"?"bgY":"bgG"; z.innerHTML+=`<div class="zone ${i===0?'sel':''}"><div class="row"><b>${x.n}</b><span class="badge ${b}">${x.s}</span></div><div class="mut">CO2 ${x.c} ppm • Temp 24.5°C • Humidity 55% • Airflow ${i===0&&!fixed?"0.12 Down 30%":"Normal"}</div></div>`});
+document.getElementById('health').innerHTML=`<div class="big">Sleep Down 28%</div>Fatigue High • Concentration Medium-High • Stress Rising<br><span class="mut">CO2: ${zones[0].c} ppm ${fixed?"GREEN":"YELLOW Rising"} • Temp 24.5°C GREEN • Humidity 55% GREEN</span>`;
+document.getElementById('body').innerHTML=`<div class="big">Recovery ${fixed?82:68}/100 ${fixed?"GREEN":"LOW"}</div>HRV Down 18% • SpO2 97% • Sleep 5.8h (Normal 7.5h) • HR 72 bpm`;
+document.getElementById('co2bars').innerHTML=[620,640,680,730,790,850].map(v=>`<div style="height:${v/11}px">${v}</div>`).join('');
 let g=document.getElementById('crewGrid'); g.innerHTML="";
-crew.forEach(c=>{let rec=c.name.includes("001")?(fixed?82:68):c.rec; let b=c.name.includes("001")?(fixed?"bgG":"bgY"):"bgG"; let st=c.name.includes("001")?(fixed?"GREEN":"YELLOW"):"GREEN"; g.innerHTML+=`<div class="card"><b>${c.name}</b> <span class="badge ${b}">${st}</span><div class="small">HR ${c.hr} bpm • SpO2 ${c.spo}% • Sleep ${c.sleep} • Recovery ${rec}/100<br>HRV ${c.name.includes("001")?"Down 18%":"Stable"} • Fatigue ${c.name.includes("001")&&!fixed?"High":"Low"}</div></div>`});
+crew.forEach(c=>{let rec=c.name.includes("001")?(fixed?82:68):c.rec; let b=c.name.includes("001")?(fixed?"bgG":"bgY"):"bgG"; let st=c.name.includes("001")?(fixed?"GREEN":"YELLOW"):"GREEN"; g.innerHTML+=`<div class="card"><div class="row"><b>${c.name}</b><span class="badge ${b}">${st}</span></div><div class="mut">HR ${c.hr} bpm • SpO2 ${c.spo}% • Sleep ${c.sleep} • Recovery ${rec}/100<br>HRV ${c.name.includes("001")?"Down 18%":"Stable"} • ${c.note}</div></div>`});
 }
-function markDone(){fixed=true; zones[0].c=610; zones[0].s="GREEN"; document.getElementById('overall').textContent="Overall: GREEN"; document.getElementById('overall').className="pill green"; document.getElementById('doneMsg').innerHTML="✅ Conditions improved. Zone GREEN. Recovery 82/100. CO2 850 → 610."; render();}
+function markDone(){fixed=true; zones[0].c=610; zones[0].s="GREEN"; let o=document.getElementById('overall'); o.textContent="Overall: GREEN • Safe"; o.className="pill green"; document.getElementById('doneMsg').innerHTML='<div class="ok">✅ Conditions improved. Zone GREEN. Recovery 82/100. CO2 850 → 610.</div>'; render();}
 function show(id){['dash','crew','models'].forEach(x=>document.getElementById(x).style.display=x===id?'block':'none'); window.scrollTo(0,0);}
 render();
 </script></body></html>
