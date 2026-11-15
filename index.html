@@ -6,17 +6,19 @@
 <title>ASTRAVITA - Nova Shield - Team OrbitFit</title>
 <style>
 :root{--green:#0E9F6E;--green2:#10B981;--teal:#0891B2;--dark:#0B1F1A;--ink:#121A16;--mut:#5A6A65;--bg:#F0F7F4;--card:#fff;--line:#E2E8E6;--yellow:#F59E0B}
-*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif!important}
+*{box-sizing:border-box;font-family:system-ui,-【entity-apple¦canonical_name=Apple】-system,Segoe UI,Roboto,sans-serif!important}
 body{margin:0;background:var(--bg);color:var(--ink);line-height:1.7}
-.hero{background:linear-gradient(135deg,#0B1F1A 0%,#0E3A2E 45%,#0891B2 100%);color:#fff;padding:36px 28px 28px;position:sticky;top:0;z-index:20}
+/* FIXED: hero is NOT sticky anymore - it scrolls away */
+.hero{background:linear-gradient(135deg,#0B1F1A 0%,#0E3A2E 45%,#0891B2 100%);color:#fff;padding:32px 28px 24px;position:relative;z-index:1}
 .hero h1{margin:0;font-size:38px;line-height:1.05;letter-spacing:-.5px}.hero h1 span{color:#34D399}
 .hero p{margin:10px 0 0;opacity:.88}.hero .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;align-items:center}
 .pillbtn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;padding:10px 16px;border-radius:999px;font-weight:700;font-size:13px;backdrop-filter:blur(6px)}
 .pillbtn.solid{background:#fff;color:#0B1F1A}
 .live{color:#4ADE80;font-weight:800}.live i{display:inline-block;width:10px;height:10px;background:#4ADE80;border-radius:50%;margin-right:7px;animation:b 1s infinite}@keyframes b{50%{opacity:.2}}
-nav{position:sticky;top:178px;z-index:19;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:9px;overflow:auto;padding:15px 18px}
-nav button{border:1.5px solid var(--line);background:#fff;padding:12px 18px;border-radius:999px;cursor:pointer;font-weight:600;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.04)}nav button.active{background:var(--dark);color:#fff;border-color:var(--dark)}
-main{max-width:1260px;margin:0 auto;padding:32px 22px 90px}
+/* FIXED: nav sticks to TOP 0 only, small and clean */
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:9px;overflow:auto;padding:12px 18px;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+nav button{border:1.5px solid var(--line);background:#fff;padding:11px 16px;border-radius:999px;cursor:pointer;font-weight:600;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.04);font-size:14px}nav button.active{background:var(--dark);color:#fff;border-color:var(--dark)}
+main{max-width:1260px;margin:0 auto;padding:28px 22px 90px}
 .kicker{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--green);text-transform:uppercase}
 h2{font-size:30px;margin:6px 0 8px;line-height:1.15;letter-spacing:-.5px}h3{font-size:19px;margin:0 0 10px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
@@ -32,7 +34,7 @@ button.primary{background:linear-gradient(135deg,#0E9F6E,#0891B2);color:#fff;bor
 table{width:100%;border-collapse:collapse}th,td{padding:13px 10px;border-bottom:1px solid #eee;text-align:left;font-size:14px}th{background:#F8FAF9}.bar{height:14px;background:#E5E7EB;border-radius:999px;overflow:hidden;margin:10px 0}.bar i{display:block;height:100%;background:linear-gradient(90deg,#0E9F6E,#0891B2)}
 .flex{display:flex;gap:14px;flex-wrap:wrap}.flex>*{flex:1;min-width:150px}.hidden{display:none!important}.section{margin-top:36px}.stat{background:#F8FAF9;border-radius:16px;padding:16px}.stat b{font-size:22px}
 footer{text-align:center;padding:32px;color:var(--mut)}
-@media(max-width:900px){.grid,.grid2{grid-template-columns:1fr}.hero h1{font-size:28px}nav{top:210px}}
+@media(max-width:900px){.grid,.grid2{grid-template-columns:1fr}.hero h1{font-size:28px}}
 </style>
 </head>
 <body>
@@ -71,7 +73,7 @@ function chooseMeal(selId){
  let sel=document.getElementById(selId); let parts=sel.value.split('|'); let kcal=parseInt(parts[0]); let name=parts[1];
  totalKcal-=kcal; eaten+=kcal;
  ['calEaten','calEaten2','calDash','calZen'].forEach(id=>{let e=document.getElementById(id); if(e) e.textContent=eaten});
- let li=document.createElement('li'); li.textContent=name+' — '+kcal+' kcal — Chosen from Space Kitchen'; 
+ let li=document.createElement('li'); li.textContent=name+' — '+kcal+' kcal — Chosen from Space Kitchen';
  if(selId==='mealSel'){document.getElementById('chosenMeals').appendChild(li)} else {document.getElementById('meals').appendChild(li)}
  updateSurvival();
  alert('Chosen: '+name+' ('+kcal+' kcal). Taken from onboard stock. Food left: '+totalKcal.toLocaleString()+' kcal. Survival updated!');
